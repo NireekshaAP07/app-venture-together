@@ -12,12 +12,16 @@ const Index = () => {
           schedule sessions, and enhance your learning with AI-powered assistance.
         </p>
         <div className="flex gap-4 justify-center">
-          <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-inter font-medium transition-colors">
-            Get Started
-          </button>
-          <button className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 rounded-lg font-inter font-medium transition-colors">
-            Learn More
-          </button>
+          <a href="/auth?tab=signup">
+            <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg font-inter font-medium transition-colors">
+              Get Started
+            </button>
+          </a>
+          <a href="/auth?tab=login">
+            <button className="bg-accent hover:bg-accent/90 text-accent-foreground px-8 py-3 rounded-lg font-inter font-medium transition-colors">
+              Sign In
+            </button>
+          </a>
         </div>
       </div>
     </div>
