@@ -214,7 +214,7 @@ const Dashboard = () => {
             </CardHeader>
             <CardContent className="space-y-3">
               {myGroups.map((group) => (
-                <div key={group.id} className="p-3 border rounded-lg hover:bg-muted/50 transition-colors cursor-pointer">
+                <div key={group.id} className="p-3 border rounded-lg hover:bg-muted/50 transition-colors cursor-pointer" onClick={() => navigate(`/groups/${group.id}`)}>
                   <div className="flex items-center justify-between">
                     <div className="flex-1">
                       <h4 className="font-medium text-sm">{group.name}</h4>
